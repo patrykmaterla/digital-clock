@@ -1,5 +1,22 @@
+body {
+	background: url("https://www.toptal.com/designers/subtlepatterns/uploads/restaurant.png");
+	background-position: center;
+	background-repeat: repeat;
+}
+
 #clock {
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 1px;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+    background-color: #16a085;
+    padding: 50px 85px 50px 85px;
+    border-radius: 45px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    font-size: 100px;
+    letter-spacing: 4px;
+    color:#ecf0f1;
+    text-shadow: 1px 1px 2px rgb(105, 103, 103);
 }
