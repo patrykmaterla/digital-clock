@@ -1,12 +1,8 @@
 function setTime() {
 	const date = new Date();
-	let hours = date.getHours();
-	let minutes = date.getMinutes();
-	let seconds = date.getSeconds();
-
-	if (hours < 10) hours = "0" + hours;
-	if (minutes < 10) minutes = "0" + minutes;
-	if (seconds < 10) seconds = "0" + seconds;
+	let hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+	let minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+	let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
 
 	document.getElementById("clock").innerHTML = hours+":"+minutes+":"+seconds;
 
